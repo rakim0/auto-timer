@@ -5,17 +5,17 @@
     "description": "Automatically starts a 10-minute timer when opening x.com tabs",
     "permissions": ["tabs", "alarms", "storage", "notifications"],
     "background": {
-        "scripts": ["constants.js", "background.js"],
+        "scripts": ["src/constants.js", "src/background/background.js"],
         "persistent": false
     },
     "browser_action": {
-        "default_popup": "status.html",
-        "default_icon": "icon.svg",
+        "default_popup": "src/status/status.html",
+        "default_icon": "assets/icon.svg",
         "default_title": "X.com Timer Status"
     },
     "icons": {
-        "48": "icon.svg",
-        "96": "icon.svg"
+        "48": "assets/icon.svg",
+        "96": "assets/icon.svg"
     },
     "browser_specific_settings": {
         "gecko": {
